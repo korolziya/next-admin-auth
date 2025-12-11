@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "NushNhKS3Ke+9aHP3dz78mMLlckddn71TNIBXLzM/OQ=",
+  "Source": "NextAdminAuth.Api",
+  "BasePath": "_content/NextAdminAuth.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "NextAdminAuth.Api/wwwroot",
+      "Source": "NextAdminAuth.Api",
+      "ContentRoot": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/",
+      "BasePath": "_content/NextAdminAuth.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "SourceId": "NextAdminAuth.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/",
+      "BasePath": "_content/NextAdminAuth.Api",
+      "RelativePath": "uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tdor6v9at2",
+      "Integrity": "z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"
+    },
+    {
+      "Identity": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "SourceId": "NextAdminAuth.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/",
+      "BasePath": "_content/NextAdminAuth.Api",
+      "RelativePath": "uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tdor6v9at2",
+      "Integrity": "z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "AssetFile": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Dec 2025 19:48:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.tdor6v9at2.jpeg",
+      "AssetFile": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 09 Dec 2025 19:48:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tdor6v9at2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "AssetFile": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Dec 2025 18:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.tdor6v9at2.jpeg",
+      "AssetFile": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 07 Dec 2025 18:35:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tdor6v9at2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="
+        }
+      ]
+    }
+  ]
+}

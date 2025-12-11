@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "PackagePath": "staticwebassets/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"
+    },
+    {
+      "Id": "/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/wwwroot/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg",
+      "PackagePath": "staticwebassets/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.NextAdminAuth.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.NextAdminAuth.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.NextAdminAuth.Api.props",
+      "PackagePath": "build\\NextAdminAuth.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.NextAdminAuth.Api.props",
+      "PackagePath": "buildMultiTargeting\\NextAdminAuth.Api.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.NextAdminAuth.Api.props",
+      "PackagePath": "buildTransitive\\NextAdminAuth.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
