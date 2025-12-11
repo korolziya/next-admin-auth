@@ -1,1 +1,1 @@
-select * from DBA_USERS
+
