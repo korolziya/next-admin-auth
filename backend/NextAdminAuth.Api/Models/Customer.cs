@@ -1,16 +1,17 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace NextAdminAuth.Api.Models;
 
-public class Customer
+public class Customer : BaseEntity
 {
-    public Guid Id { get; set; }
+    [Required]
+    [StringLength(11, MinimumLength = 11)]
+    public string Tckn { get; set; } = string.Empty;
     public required string FullName { get; set; }
     public required string Email { get; set; }
     public string? Phone { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     // Her müşteri bir şirkete aittir
     public Guid CompanyId { get; set; }
     public Company? Company { get; set; }
 }
-

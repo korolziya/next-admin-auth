@@ -132,3 +132,4 @@
 /Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/bin/Debug/net9.0/MailKit.dll
 /Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/bin/Debug/net9.0/MimeKit.dll
 /Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/bin/Debug/net9.0/NextAdminAuth.Api.staticwebassets.runtime.json
+/Users/yusufziyakorol/workspace/next-admin-auth/backend/NextAdminAuth.Api/obj/Debug/net9.0/NextAdminAuth.Api.sourcelink.json

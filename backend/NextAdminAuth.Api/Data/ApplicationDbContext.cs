@@ -24,10 +24,34 @@ public class ApplicationDbContext : DbContext
     public DbSet<VerificationToken> VerificationTokens { get; set; }
     public DbSet<MenuItem> MenuItems { get; set; }
 
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        var entries = ChangeTracker.Entries<ISoftDelete>();
+        foreach (var entry in entries)
+        {
+            if (entry.State == EntityState.Deleted)
+            {
+                entry.State = EntityState.Modified;
+                entry.Entity.IsDeleted = true;
+                entry.Entity.DeletedAt = DateTime.UtcNow;
+            }
+        }
+        return base.SaveChangesAsync(cancellationToken);
+    }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
         
+        // Global Query Filter for Soft Delete
+        modelBuilder.Entity<User>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Company>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Customer>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Role>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Screen>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<Permission>().HasQueryFilter(e => !e.IsDeleted);
+        modelBuilder.Entity<MenuItem>().HasQueryFilter(e => !e.IsDeleted);
+
         // Menu Items Configuration
         modelBuilder.Entity<MenuItem>(entity =>
         {
@@ -84,8 +108,13 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Customer>(entity =>
         {
             entity.HasKey(e => e.Id);
+            
+            // TCKN Constraints
+            entity.HasIndex(e => e.Tckn).IsUnique(); // Unique
+            entity.ToTable(t => t.HasCheckConstraint("CK_Customer_Tckn_NoLeadingZero", "\"Tckn\" NOT LIKE '0%'")); // İlk hane 0 olamaz
+
             entity.HasOne(c => c.Company)
-                  .WithMany()
+                  .WithMany(comp => comp.Customers)
                   .HasForeignKey(c => c.CompanyId)
                   .OnDelete(DeleteBehavior.Cascade);
         });

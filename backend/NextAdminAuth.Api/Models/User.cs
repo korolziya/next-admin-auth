@@ -1,8 +1,7 @@
 namespace NextAdminAuth.Api.Models;
 
-public class User
+public class User : BaseEntity
 {
-    public Guid Id { get; set; }
     public required string Email { get; set; }
     public required string Password { get; set; }
     public required string FirstName { get; set; }
@@ -16,8 +15,6 @@ public class User
 
     public string? RefreshToken { get; set; }
     public DateTime? RefreshTokenExpiryTime { get; set; }
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-    public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
     // Foreign Key
     public Guid CompanyId { get; set; }

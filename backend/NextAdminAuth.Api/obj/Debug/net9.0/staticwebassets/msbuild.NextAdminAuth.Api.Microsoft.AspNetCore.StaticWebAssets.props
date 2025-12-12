@@ -18,6 +18,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>NextAdminAuth.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/NextAdminAuth.Api</BasePath>
+      <RelativePath>uploads/54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tdor6v9at2</Fingerprint>
+      <Integrity>z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))">
       <SourceType>Package</SourceType>
       <SourceId>NextAdminAuth.Api</SourceId>

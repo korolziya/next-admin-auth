@@ -1,9 +1,7 @@
 namespace NextAdminAuth.Api.Models;
 
-public class Permission
+public class Permission : BaseEntity
 {
-    public Guid Id { get; set; }
-    
     public Guid RoleId { get; set; }
     public Role Role { get; set; } = null!;
 
@@ -16,4 +14,3 @@ public class Permission
     public bool CanUpdate { get; set; }
     public bool CanDelete { get; set; }
 }
-

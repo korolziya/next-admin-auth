@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using NextAdminAuth.Api.Data;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace NextAdminAuth.Api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251212205529_AddSoftDelete")]
+    partial class AddSoftDelete
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -137,9 +140,6 @@ namespace NextAdminAuth.Api.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ParentId");
@@ -149,65 +149,60 @@ namespace NextAdminAuth.Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("110bed69-34fc-4354-8ecb-440cb77c35c1"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(990),
+                            Id = new Guid("f0539e77-8ab6-49f1-b8f3-c16fba604996"),
+                            CreatedAt = new DateTime(2025, 12, 12, 20, 55, 29, 526, DateTimeKind.Utc).AddTicks(1400),
                             Icon = "LayoutDashboard",
                             IsActive = true,
                             IsDeleted = false,
                             Order = 1,
                             Path = "/dashboard",
-                            Title = "Ana Sayfa",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(990)
+                            Title = "Ana Sayfa"
                         },
                         new
                         {
-                            Id = new Guid("550c6f29-6893-4134-942a-1f5ea44f4991"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(2670),
+                            Id = new Guid("827d783b-15dc-40cc-bb5b-5f6c90368b43"),
+                            CreatedAt = new DateTime(2025, 12, 12, 20, 55, 29, 526, DateTimeKind.Utc).AddTicks(2490),
                             Icon = "Users",
                             IsActive = true,
                             IsDeleted = false,
                             Order = 2,
                             Path = "#",
-                            Title = "Yönetim",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(2670)
+                            Title = "Yönetim"
                         },
                         new
                         {
-                            Id = new Guid("0e3bbee9-1dc6-40ee-b16d-23bf119efbb4"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(2670),
+                            Id = new Guid("fdbbb6f4-eca1-4856-a00a-ae568c49538c"),
+                            CreatedAt = new DateTime(2025, 12, 12, 20, 55, 29, 526, DateTimeKind.Utc).AddTicks(2490),
                             Icon = "Settings",
                             IsActive = true,
                             IsDeleted = false,
                             Order = 3,
                             Path = "/dashboard/settings",
-                            Title = "Ayarlar",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(2670)
+                            Title = "Ayarlar"
                         },
                         new
                         {
-                            Id = new Guid("7c5f2c1f-069b-46a5-b5f0-e4171a2104e4"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(2670),
+                            Id = new Guid("7d9d5b63-64dc-4575-8110-9d4052e8cad0"),
+                            CreatedAt = new DateTime(2025, 12, 12, 20, 55, 29, 526, DateTimeKind.Utc).AddTicks(2490),
                             Icon = "User",
                             IsActive = true,
                             IsDeleted = false,
                             Order = 1,
-                            ParentId = new Guid("550c6f29-6893-4134-942a-1f5ea44f4991"),
+                            ParentId = new Guid("827d783b-15dc-40cc-bb5b-5f6c90368b43"),
                             Path = "/dashboard/users",
-                            Title = "Kullanıcılar",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(2680)
+                            Title = "Kullanıcılar"
                         },
                         new
                         {
-                            Id = new Guid("320ac7fd-17f9-4ae3-833c-a389924320c0"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(3000),
+                            Id = new Guid("d4ed220e-1684-4029-b91e-cf67b032f0cd"),
+                            CreatedAt = new DateTime(2025, 12, 12, 20, 55, 29, 526, DateTimeKind.Utc).AddTicks(2690),
                             Icon = "Users",
                             IsActive = true,
                             IsDeleted = false,
                             Order = 2,
-                            ParentId = new Guid("550c6f29-6893-4134-942a-1f5ea44f4991"),
+                            ParentId = new Guid("827d783b-15dc-40cc-bb5b-5f6c90368b43"),
                             Path = "/dashboard/customers",
-                            Title = "Müşteriler",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(3000)
+                            Title = "Müşteriler"
                         });
                 });
 
@@ -229,9 +224,6 @@ namespace NextAdminAuth.Api.Migrations
                     b.Property<bool>("CanUpdate")
                         .HasColumnType("boolean");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -244,9 +236,6 @@ namespace NextAdminAuth.Api.Migrations
                     b.Property<Guid>("ScreenId")
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.HasKey("Id");
 
                     b.HasIndex("RoleId");
@@ -258,42 +247,36 @@ namespace NextAdminAuth.Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("277deb13-6bf9-473b-ab50-3c644a66c18e"),
+                            Id = new Guid("b07edd47-4fd6-4431-8d2c-0dd681f4df4c"),
                             CanCreate = true,
                             CanDelete = true,
                             CanRead = true,
                             CanUpdate = true,
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(1550),
                             IsDeleted = false,
                             RoleId = new Guid("d8663e5e-7494-4f81-8739-6e0de1c9858b"),
-                            ScreenId = new Guid("4b545f7e-34fd-445e-b0aa-962843ce1540"),
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(1550)
+                            ScreenId = new Guid("86209540-e680-4672-866b-a0461eacfe25")
                         },
                         new
                         {
-                            Id = new Guid("37e079a4-ba94-472d-9516-7cf3b842f0ee"),
+                            Id = new Guid("1f72af6c-0f97-4ba0-b27a-a895267277aa"),
                             CanCreate = true,
                             CanDelete = true,
                             CanRead = true,
                             CanUpdate = true,
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(3000),
                             IsDeleted = false,
                             RoleId = new Guid("c7b013f0-5201-4317-a5d4-9d0a5198f2f4"),
-                            ScreenId = new Guid("4b545f7e-34fd-445e-b0aa-962843ce1540"),
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(3000)
+                            ScreenId = new Guid("86209540-e680-4672-866b-a0461eacfe25")
                         },
                         new
                         {
-                            Id = new Guid("2e797c0c-82ae-4d92-a756-0d3495826c94"),
+                            Id = new Guid("e50dd200-6f98-4651-9f06-c0b589ab4835"),
                             CanCreate = false,
                             CanDelete = false,
                             CanRead = true,
                             CanUpdate = false,
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(3010),
                             IsDeleted = false,
                             RoleId = new Guid("72f8c5a2-9b1e-4239-847e-123456789abc"),
-                            ScreenId = new Guid("4b545f7e-34fd-445e-b0aa-962843ce1540"),
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(3010)
+                            ScreenId = new Guid("86209540-e680-4672-866b-a0461eacfe25")
                         });
                 });
 
@@ -302,9 +285,6 @@ namespace NextAdminAuth.Api.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
 
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp with time zone");
@@ -319,9 +299,6 @@ namespace NextAdminAuth.Api.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.HasKey("Id");
 
                     b.ToTable("Roles");
@@ -330,26 +307,20 @@ namespace NextAdminAuth.Api.Migrations
                         new
                         {
                             Id = new Guid("d8663e5e-7494-4f81-8739-6e0de1c9858b"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(9920),
                             IsDeleted = false,
-                            Name = "SuperAdmin",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 667, DateTimeKind.Utc).AddTicks(9920)
+                            Name = "SuperAdmin"
                         },
                         new
                         {
                             Id = new Guid("c7b013f0-5201-4317-a5d4-9d0a5198f2f4"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(190),
                             IsDeleted = false,
-                            Name = "Admin",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(200)
+                            Name = "Admin"
                         },
                         new
                         {
                             Id = new Guid("72f8c5a2-9b1e-4239-847e-123456789abc"),
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(200),
                             IsDeleted = false,
-                            Name = "User",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(200)
+                            Name = "User"
                         });
                 });
 
@@ -363,9 +334,6 @@ namespace NextAdminAuth.Api.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("timestamp with time zone");
 
@@ -376,9 +344,6 @@ namespace NextAdminAuth.Api.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<DateTime>("UpdatedAt")
-                        .HasColumnType("timestamp with time zone");
-
                     b.HasKey("Id");
 
                     b.ToTable("Screens");
@@ -386,12 +351,10 @@ namespace NextAdminAuth.Api.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4b545f7e-34fd-445e-b0aa-962843ce1540"),
+                            Id = new Guid("86209540-e680-4672-866b-a0461eacfe25"),
                             Code = "PAGE_CUSTOMERS",
-                            CreatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(630),
                             IsDeleted = false,
-                            Name = "Customers",
-                            UpdatedAt = new DateTime(2025, 12, 12, 21, 1, 22, 668, DateTimeKind.Utc).AddTicks(630)
+                            Name = "Customers"
                         });
                 });
 

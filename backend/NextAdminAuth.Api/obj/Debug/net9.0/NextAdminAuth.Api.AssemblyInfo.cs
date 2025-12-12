@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NextAdminAuth.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80e8132d63c967654bf405b57e2d6821a50b4f1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+497697c4ba6e2ac548e5d3a79c9f26ea4ba37e8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("NextAdminAuth.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NextAdminAuth.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

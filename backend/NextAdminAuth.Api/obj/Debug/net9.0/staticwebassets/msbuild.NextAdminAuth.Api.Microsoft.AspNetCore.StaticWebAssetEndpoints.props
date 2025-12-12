@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tdor6v9at2"},{"Name":"integrity","Value":"sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="},{"Name":"label","Value":"_content/NextAdminAuth.Api/uploads/12023fbb-3b59-4f8b-92be-549696c07073_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28541"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\u0022"},{"Name":"Last-Modified","Value":"Tue, 09 Dec 2025 19:48:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/NextAdminAuth.Api/uploads/54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"28541"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Dec 2025 19:02:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/NextAdminAuth.Api/uploads/54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.tdor6v9at2.jpeg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tdor6v9at2"},{"Name":"integrity","Value":"sha256-z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek="},{"Name":"label","Value":"_content/NextAdminAuth.Api/uploads/54c7b530-f13e-48c9-a73c-fd322444ddaa_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"28541"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022z5n9JO3mUe/5HRllTzKkKb4uwcE4fq/xc7J7IMbT7Ek=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Dec 2025 19:02:59 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/NextAdminAuth.Api/uploads/c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\c7e3472e-9b59-43dd-a730-4e947dddeae8_5EDD877A-323D-48B3-9C9A-BD55BDB0DFC6.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
